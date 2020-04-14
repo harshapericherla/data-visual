@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ html
+ {
+     max-width: 1360px;
+     margin: 0;
+     padding: 0;
+ }
+  .App
+  {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #dashBoard
+  {
+    height: 1350px;
+    width:20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0078bf;
+    color:white;
   }
-  to {
-    transform: rotate(360deg);
+  #bodyCt
+  {
+      width: 80%;
+      margin-top: 1%;
   }
-}
+  .group
+  {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+  }
+  .group *
+  {
+      margin-top:10px;
+      margin-bottom: 10px;
+  }
+  .header
+  {
+      border-bottom: 0.5px solid white;
+      font-size: larger;
+
+  }
+
+  .cText:hover
+  {
+      cursor: pointer;
+  }
+
+  .cText.active
+  {
+      font-weight: bold;
+  }
+  .group-one
+  {
+      margin-top: 100px;
+  }
